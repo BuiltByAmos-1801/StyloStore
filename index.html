@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover everyday essentials and distinctive streetwear from Stylo Stroe. Browse the collection and enquire directly on WhatsApp.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Stylo Stroe — Wear Your Identity</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23171717'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' fill='%23f7f5f0' font-family='Arial' font-size='32' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <p>New collection available <span aria-hidden="true">—</span> <a href="#shop">Explore now</a></p>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="wordmark" href="#home" aria-label="Stylo Stroe home">STYLO <span>STROE</span><i>.</i></a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#story">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="bag-button" id="bag-open" type="button" aria-label="Open shopping bag, 0 items">
+        <span>Bag</span>
+        <span class="bag-count" id="bag-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=2200&amp;q=88" alt="Contemporary streetwear editorial in warm afternoon light" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">The first edit · Stylo Stroe</p>
+        <h1 id="hero-title">Wear Your<br><em>Identity.</em></h1>
+        <p class="hero-copy">Everyday essentials.<br>Distinctive style.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#shop">Shop collection <span aria-hidden="true">↗</span></a>
+          <a class="text-link hero-secondary" href="#categories">Explore new arrivals <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <span class="hero-index">01 / 04</span>
+      <a class="hero-scroll" href="#categories"><span></span> Scroll to discover</a>
+    </section>
+
+    <section class="categories section-wrap" id="categories" aria-labelledby="categories-title">
+      <div class="section-heading category-heading">
+        <div>
+          <p class="eyebrow">Find your fit</p>
+          <h2 id="categories-title">A little of<br><em>everything.</em></h2>
+        </div>
+        <a class="text-link" href="#shop">Shop all pieces <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-tshirt" href="#shop" data-category-link="T-Shirts">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Minimal white t-shirt" loading="lazy">
+          <span class="category-label"><span>01 / Everyday</span><strong>T-Shirts</strong><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-shirts" href="#shop" data-category-link="Shirts">
+          <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Relaxed fit shirt" loading="lazy">
+          <span class="category-label"><span>02 / Layer up</span><strong>Shirts</strong><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-hoodies" href="#shop" data-category-link="Hoodies">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Neutral everyday hoodie" loading="lazy">
+          <span class="category-label"><span>03 / Off-duty</span><strong>Hoodies</strong><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-new" href="#shop" data-category-link="New Arrivals">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Curated contemporary fashion collection" loading="lazy">
+          <span class="category-label"><span>04 / Just landed</span><strong>New arrivals</strong><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-wrap">
+        <div class="section-heading shop-heading">
+          <div>
+            <p class="eyebrow">Considered, not complicated</p>
+            <h2 id="shop-title">The <em>good</em> stuff.</h2>
+          </div>
+          <p class="shop-intro">Pieces made to move with you.<br>Find your everyday favourite.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter products by category">
+            <button class="filter-button is-active" type="button" data-filter="All" aria-pressed="true">All pieces</button>
+            <button class="filter-button" type="button" data-filter="T-Shirts" aria-pressed="false">T-shirts</button>
+            <button class="filter-button" type="button" data-filter="Shirts" aria-pressed="false">Shirts</button>
+            <button class="filter-button" type="button" data-filter="Hoodies" aria-pressed="false">Hoodies</button>
+            <button class="filter-button" type="button" data-filter="New Arrivals" aria-pressed="false">New arrivals</button>
+          </div>
+          <span class="product-total" id="product-total" aria-live="polite"></span>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="story section-wrap" id="story" aria-labelledby="story-title">
+      <div class="story-image-wrap">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A considered edit of everyday contemporary clothing" loading="lazy">
+        <span class="story-image-note">The everyday, reimagined.</span>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">A note from us</p>
+        <h2 id="story-title">Made for<br>your <em>everyday.</em></h2>
+        <p>Stylo Stroe is a space for the pieces you reach for again and again. Thoughtful shapes, easy layers and a point of view that feels like your own.</p>
+        <p>This is a placeholder brand story. Make it yours with the words, people and ideas that define your label.</p>
+        <a class="text-link" href="#contact">A little more about us <span aria-hidden="true">↗</span></a>
+        <span class="story-stamp" aria-hidden="true">S<span>.</span></span>
+      </div>
+    </section>
+
+    <section class="details-section" aria-labelledby="details-title">
+      <div class="section-wrap">
+        <div class="details-intro">
+          <p class="eyebrow">The details</p>
+          <h2 id="details-title">Good to <em>know.</em></h2>
+        </div>
+        <div class="details-grid">
+          <details class="info-item">
+            <summary><span>01</span> Shipping information <span class="plus" aria-hidden="true"></span></summary>
+            <p>Add your shipping coverage, dispatch timelines, delivery charges and any other fulfilment details here. Confirm all information before publishing.</p>
+          </details>
+          <details class="info-item">
+            <summary><span>02</span> Returns &amp; exchanges <span class="plus" aria-hidden="true"></span></summary>
+            <p>Replace this placeholder with your confirmed return and exchange conditions, eligibility window and process. No policy is implied by this demo.</p>
+          </details>
+          <details class="info-item">
+            <summary><span>03</span> Size guide <span class="plus" aria-hidden="true"></span></summary>
+            <p>Add garment measurements and fit guidance for each style. For help choosing a size, contact us before placing an enquiry.</p>
+          </details>
+          <details class="info-item">
+            <summary><span>04</span> Frequently asked questions <span class="plus" aria-hidden="true"></span></summary>
+            <p>Questions about a product or an enquiry? Reach out using the contact details below. Add your most useful customer answers here.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact" aria-labelledby="newsletter-title">
+      <div class="newsletter-inner section-wrap">
+        <div>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2 id="newsletter-title">Notes from<br><em>the good side.</em></h2>
+          <p class="newsletter-copy">The occasional new drop, styling thought and little something from us.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <label for="newsletter-email">Your email address</label>
+          <div class="email-field">
+            <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <button type="submit" aria-label="Submit email address">Join <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="form-note" id="newsletter-message" aria-live="polite">Newsletter sign-up needs a mailing-list service to be connected.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div class="footer-brand">
+        <a class="wordmark footer-wordmark" href="#home">STYLO <span>STROE</span><i>.</i></a>
+        <p>Everyday essentials.<br>Distinctive style.</p>
+      </div>
+      <div class="footer-column">
+        <h2>Explore</h2>
+        <a href="#home">Home</a><a href="#shop">Shop all</a><a href="#categories">Collections</a><a href="#story">Our story</a>
+      </div>
+      <div class="footer-column">
+        <h2>Here to help</h2>
+        <a href="#contact">Contact us</a><a href="#details-title">Shipping info</a><a href="#details-title">Returns &amp; exchanges</a><a href="#details-title">Size guide</a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h2>Say hello</h2>
+        <a href="mailto:hello@yourbrand.example">hello@yourbrand.example</a>
+        <p>Replace with your business contact details.</p>
+        <div class="social-links"><a href="#contact" aria-label="Instagram link placeholder">Instagram ↗</a><a href="#contact" aria-label="Pinterest link placeholder">Pinterest ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom section-wrap">
+      <p>© <span id="year"></span> Stylo Stroe. A brand name placeholder.</p>
+      <p>Shipping · Returns · Privacy <span class="footer-disclaimer">— Add your confirmed policies before launch.</span></p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <section class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" hidden>
+    <button class="icon-button modal-close" type="button" aria-label="Close product details">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal-image-wrap"><img id="modal-image" src="" alt=""></div>
+    <div class="modal-info">
+      <p class="eyebrow" id="modal-category"></p>
+      <h2 id="modal-name"></h2>
+      <p class="modal-price" id="modal-price"></p>
+      <p class="modal-description" id="modal-description"></p>
+      <p class="modal-colors" id="modal-colors"></p>
+      <div class="modal-option">
+        <div class="option-heading"><span>Choose size</span><a href="#details-title" class="text-link">Size guide ↗</a></div>
+        <div class="size-options" id="size-options" role="group" aria-label="Available sizes"></div>
+        <p class="field-error" id="size-error" aria-live="polite"></p>
+      </div>
+      <div class="modal-option quantity-option">
+        <label for="product-quantity">Quantity</label>
+        <div class="quantity-control"><button type="button" data-quantity-step="-1" aria-label="Decrease quantity">−</button><input id="product-quantity" type="number" min="1" max="10" value="1" inputmode="numeric"><button type="button" data-quantity-step="1" aria-label="Increase quantity">+</button></div>
+      </div>
+      <button class="button button-dark modal-add" id="modal-add" type="button">Add to bag <span aria-hidden="true">↗</span></button>
+      <p class="modal-footnote">Enquire about availability before purchase. No payment is taken on this demo site.</p>
+    </div>
+  </section>
+
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="drawer-header">
+      <div><p class="eyebrow">Your selection</p><h2 id="cart-title">The bag <span id="drawer-count">(0)</span></h2></div>
+      <button class="icon-button cart-close" type="button" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="cart-content" id="cart-content"></div>
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div>
+      <p>Shipping and availability can be confirmed in your enquiry.</p>
+      <button class="button button-dark whatsapp-button" id="whatsapp-order" type="button">Order via WhatsApp <span aria-hidden="true">↗</span></button>
+      <p class="whatsapp-warning" id="whatsapp-warning" role="status"></p>
+      <p class="cart-disclaimer">This is an enquiry only. Your order is not confirmed when WhatsApp opens.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
